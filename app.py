@@ -43,5 +43,5 @@ def preview():
     return render_template('preview.html',  tables=[df_summary.to_html(classes ='df_summary', header = "true")])
     
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(debug = True, threaded=True)
 
