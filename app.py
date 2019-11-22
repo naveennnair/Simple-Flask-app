@@ -14,7 +14,7 @@ os.chdir(r'C:\Users\Public\Documents\Python Scripts\Flask\Demo')
 
 @app.route('/')
 def index():
-    return render_template('signup.html')
+    return render_template('index.html')
 
 @app.route('/', methods = ['POST','GET'])
 def update():
